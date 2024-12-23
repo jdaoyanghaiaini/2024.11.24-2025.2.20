@@ -1,0 +1,146 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6800",
+          "message": {
+            "text": "通过 /analyze:ruleset 或 /analyze:external:ruleset 选项指定的规则集文件无法成功分析，将被忽略。"
+          },
+          "analysisTarget": {
+            "uri": "file:///d:/代码管理/代码练习/slistnode/slistnode/链表.c"
+          },
+          "locations": []
+        },
+        {
+          "ruleId": "C6800",
+          "message": {
+            "text": "通过 /analyze:ruleset 或 /analyze:external:ruleset 选项指定的规则集文件无法成功分析，将被忽略。"
+          },
+          "analysisTarget": {
+            "uri": "file:///d:/代码管理/代码练习/slistnode/slistnode/链表.c"
+          },
+          "locations": []
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "取消对 NULL 指针“newnode”的引用。"
+          },
+          "analysisTarget": {
+            "uri": "file:///d:/代码管理/代码练习/slistnode/slistnode/链表.c"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/代码管理/代码练习/SListNode/SListNode/链表.c"
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 2,
+                  "endLine": 16,
+                  "endColumn": 18
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SLTbuynode",
+                  "decoratedName": "SLTbuynode",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/代码管理/代码练习/SListNode/SListNode/链表.c"
+                          },
+                          "region": {
+                            "startLine": 15,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "“newnode”可能为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/代码管理/代码练习/SListNode/SListNode/链表.c"
+                          },
+                          "region": {
+                            "startLine": 16,
+                            "startColumn": 16
+                          }
+                        },
+                        "message": {
+                          "text": "已取消对“newnode”的引用，但可能仍为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.42.34435.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/代码管理/代码练习/slistnode/slistnode/链表.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "425c88089b07f6c71a65feca545a4cee84e5e2d8d3738d1d536677191e057c5b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/代码管理/代码练习/slistnode/slistnode/lianb.h"
+          },
+          "hashes": {
+            "sha-256": "c00bba8ac79d93205d070ebac4fcf97b2ece65727c0e71dff19fddc872df0bb6"
+          }
+        }
+      ]
+    }
+  ]
+}
