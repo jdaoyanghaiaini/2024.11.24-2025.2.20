@@ -1,0 +1,5 @@
+﻿  SLTlist.c
+D:\代码管理\代码练习\链表教学\链表教学\SLTlist.c(117,13): warning C4047: “初始化”:“SLTNode *”与“SLTNode **”的间接级别不同
+  test.c
+  正在生成代码...
+  链表教学.vcxproj -> D:\代码管理\代码练习\链表教学\x64\Debug\链表教学.exe
